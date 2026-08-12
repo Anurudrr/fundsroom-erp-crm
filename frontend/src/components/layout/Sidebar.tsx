@@ -10,7 +10,7 @@ import {
   Users,
   X,
 } from "lucide-react";
-import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 interface SidebarProps {
@@ -40,7 +40,6 @@ const menuSections = [
 
 export function Sidebar({ isOpen, onClose, collapsed, onToggleCollapse }: SidebarProps) {
   const navigate = useNavigate();
-  const location = useLocation();
 
   function handleLogout() {
     localStorage.removeItem("token");

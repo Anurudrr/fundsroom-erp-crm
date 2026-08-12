@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { Eye, EyeOff, ArrowRight, Briefcase, ShieldCheck, Zap, BarChart3, UserPlus } from "lucide-react";
+import { Eye, EyeOff, Briefcase, ShieldCheck, Zap, BarChart3, UserPlus } from "lucide-react";
 import api from "../../api/api";
 
 const FEATURES = [

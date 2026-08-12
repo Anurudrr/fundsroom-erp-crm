@@ -5,7 +5,6 @@ import type { Customer } from "../../types/customer";
 import { Badge } from "../../components/ui/Badge";
 import { Skeleton } from "../../components/ui/Skeleton";
 import { EmptyState } from "../../components/ui/EmptyState";
-import { PageHeader } from "../../components/ui/PageHeader";
 import { motion } from "framer-motion";
 
 const tableVariants = {

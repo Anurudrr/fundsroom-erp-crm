@@ -148,7 +148,7 @@ const itemVariants = {
   show: { 
     opacity: 1, 
     y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 }
+    transition: { type: "spring" as const, stiffness: 300, damping: 24 }
   }
 };
 
@@ -163,7 +163,7 @@ interface StatCardProps {
   animDelay: number;
 }
 
-function StatCard({ title, targetValue, icon: Icon, iconClass, growth, up, isCurrency, animDelay }: StatCardProps) {
+function StatCard({ title, targetValue, icon: Icon, iconClass, growth, up, isCurrency, animDelay: _animDelay }: StatCardProps) {
   const animatedValue = useCountUp(targetValue, 900);
   return (
     <motion.div
